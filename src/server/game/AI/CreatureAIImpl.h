@@ -19,7 +19,9 @@
 
 #include "Random.h"
 #include <type_traits>
-
+#if defined(__APPLE_CC__)
+#include <functional>
+#endif
 class WorldObject;
 
 template<typename First, typename Second, typename... Rest>
